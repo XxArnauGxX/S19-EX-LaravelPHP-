@@ -16,8 +16,8 @@ class CalculadoraController extends Controller
         ];
 
         $rules = [
-            'num1' => 'required|integer|min:1',
-            'num2' => 'required|integer|min:1',
+            'num1' => 'required|numeric|min:1',
+            'num2' => 'required|numeric|min:1',
         ];
 
         $validator = Validator::make($data, $rules);
@@ -48,8 +48,8 @@ class CalculadoraController extends Controller
         ];
 
         $rules = [
-            'num1' => 'required|integer',
-            'num2' => 'required|integer',
+            'num1' => 'required|numeric',
+            'num2' => 'required|numeric',
         ];
 
         $validator = Validator::make($data, $rules);
